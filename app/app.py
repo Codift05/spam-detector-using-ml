@@ -384,8 +384,9 @@ def main():
     if model is None or tfidf is None:
         st.markdown("""
             <div class='main-card' style='text-align: center; padding: 3rem;'>
-                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" style="margin: 0 auto 1rem;">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="#ff6b6b"/>
+                <svg width="80" height="80" viewBox="0 0 24 24" style="margin: 0 auto 1rem;">
+                    <circle cx="12" cy="12" r="11" fill="#4c6ef5" opacity="0.1" stroke="#4c6ef5" stroke-width="0.5"/>
+                    <text x="12" y="16" font-size="20" font-weight="bold" fill="#4c6ef5" text-anchor="middle">!</text>
                 </svg>
                 <h2 style="color: #1a202c; margin-bottom: 1rem;">Model Not Found</h2>
                 <p style="color: #718096;">Please run the training notebook first to generate the model files.</p>
@@ -402,8 +403,9 @@ def main():
                     <p style="margin: 0.5rem 0 0 0;">Detect spam messages with machine learning</p>
                 </div>
                 <div style="width: 60px; height: 60px; background: #4c6ef5; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <svg width="32" height="32" viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3" fill="white"/>
+                        <path d="M12 14c-4 0-6 2-6 4v2h12v-2c0-2-2-4-6-4z" fill="white"/>
                     </svg>
                 </div>
             </div>
@@ -416,9 +418,10 @@ def main():
     with col1:
         st.markdown("""
             <div class='stat-card'>
-                <div class='stat-icon' style='background: #dbe4ff;'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#4c6ef5">
-                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                <div class='stat-icon' style='background: #e7f5ff;'>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                        <path d="M12 7v5l4 2.5" fill="none" stroke="#4c6ef5" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <h3>ACCURACY</h3>
@@ -429,9 +432,11 @@ def main():
     with col2:
         st.markdown("""
             <div class='stat-card'>
-                <div class='stat-icon' style='background: #ffe3e3;'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#ff6b6b">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                <div class='stat-icon' style='background: #e7f5ff;'>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="4" height="16" rx="1" fill="#4c6ef5"/>
+                        <rect x="10" y="6" width="4" height="14" rx="1" fill="#4c6ef5"/>
+                        <rect x="17" y="2" width="4" height="18" rx="1" fill="#4c6ef5"/>
                     </svg>
                 </div>
                 <h3>MODEL TYPE</h3>
@@ -442,9 +447,11 @@ def main():
     with col3:
         st.markdown("""
             <div class='stat-card'>
-                <div class='stat-icon' style='background: #d3f9e1;'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#51cf66">
-                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                <div class='stat-icon' style='background: #e7f5ff;'>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                        <path d="M12 7c1.5 0 2.7 1.2 2.7 2.7S13.5 12.4 12 12.4c-1.5 0-2.7-1.2-2.7-2.7S10.5 7 12 7z" fill="#4c6ef5"/>
+                        <path d="M12 14c-2.4 0-4 1.3-4 3v2.5h8V17c0-1.7-1.6-3-4-3z" fill="#4c6ef5"/>
                     </svg>
                 </div>
                 <h3>F1-SCORE</h3>
@@ -455,8 +462,10 @@ def main():
     # Info Alert
     st.markdown("""
         <div class='info-alert'>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#4c6ef5">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            <svg width="20" height="20" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                <circle cx="12" cy="7" r="1.2" fill="#4c6ef5"/>
+                <path d="M12 10v6" stroke="#4c6ef5" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             <div>
                 <strong>Tip:</strong> Try different message types to see how the model detects spam patterns
@@ -515,10 +524,11 @@ def main():
         if user_input.strip() == "":
             st.markdown("""
                 <div class='main-card' style='text-align: center; padding: 2rem;'>
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" style="margin: 0 auto 1rem;">
-                        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" fill="#f59e0b"/>
+                    <svg width="60" height="60" viewBox="0 0 24 24" style="margin: 0 auto 1rem;">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                        <path d="M8 12h8M12 8v8" stroke="#4c6ef5" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
-                    <p style="color: #78350f; font-weight: 500;">Please enter a message to analyze</p>
+                    <p style="color: #4c6ef5; font-weight: 500;">Please enter a message to analyze</p>
                 </div>
             """, unsafe_allow_html=True)
         else:
@@ -531,13 +541,14 @@ def main():
                     st.markdown(f"""
                         <div class='result-card result-spam'>
                             <div class='result-icon result-icon-spam'>
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="#ff6b6b">
-                                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                                <svg width="32" height="32" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="9" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                                    <path d="M8 12h8" stroke="#4c6ef5" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <div class='result-title'>Spam Detected</div>
-                            <div class='result-confidence' style='color: #c92a2a; font-weight: 600;'>{confidence:.1f}% confidence</div>
-                            <p style='margin-top: 1rem; color: #862e2e; font-size: 0.95rem;'>
+                            <div class='result-confidence' style='color: #4c6ef5; font-weight: 600;'>{confidence:.1f}% confidence</div>
+                            <p style='margin-top: 1rem; color: #495057; font-size: 0.95rem;'>
                                 This message appears to be spam. Exercise caution.
                             </p>
                         </div>
@@ -547,13 +558,14 @@ def main():
                     st.markdown(f"""
                         <div class='result-card result-safe'>
                             <div class='result-icon result-icon-safe'>
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="#51cf66">
-                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                                <svg width="32" height="32" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="9" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                                    <path d="M9 12.5l2.5 2.5 4-4" stroke="#4c6ef5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                             <div class='result-title'>Safe Message</div>
-                            <div class='result-confidence' style='color: #2b8a3e; font-weight: 600;'>{confidence:.1f}% confidence</div>
-                            <p style='margin-top: 1rem; color: #2f6f3e; font-size: 0.95rem;'>
+                            <div class='result-confidence' style='color: #4c6ef5; font-weight: 600;'>{confidence:.1f}% confidence</div>
+                            <p style='margin-top: 1rem; color: #495057; font-size: 0.95rem;'>
                                 This message appears to be legitimate and safe.
                             </p>
                         </div>
@@ -573,12 +585,12 @@ def main():
                     st.markdown(f"""
                         <div class='metric-card'>
                             <div class='metric-label'>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#51cf66" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <circle cx="12" cy="12" r="10"/>
+                                <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <circle cx="12" cy="12" r="5" fill="#4c6ef5"/>
                                 </svg>
                                 Normal Message (Ham)
                             </div>
-                            <div class='metric-value' style='color: #37b24d;'>{probability[0]*100:.1f}%</div>
+                            <div class='metric-value' style='color: #4c6ef5;'>{probability[0]*100:.1f}%</div>
                             <div class='progress-container'>
                                 <div class='progress-bar progress-ham' style='width: {probability[0]*100}%;'></div>
                             </div>
@@ -589,12 +601,12 @@ def main():
                     st.markdown(f"""
                         <div class='metric-card'>
                             <div class='metric-label'>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff6b6b" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <circle cx="12" cy="12" r="10"/>
+                                <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <circle cx="12" cy="12" r="5" fill="#4c6ef5"/>
                                 </svg>
                                 Spam Message
                             </div>
-                            <div class='metric-value' style='color: #ee5a6f;'>{probability[1]*100:.1f}%</div>
+                            <div class='metric-value' style='color: #4c6ef5;'>{probability[1]*100:.1f}%</div>
                             <div class='progress-container'>
                                 <div class='progress-bar progress-spam' style='width: {probability[1]*100}%;'></div>
                             </div>
@@ -626,20 +638,25 @@ def main():
             <div style='text-align: center;'>
                 <div style='display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap;'>
                     <div style='display: flex; align-items: center; gap: 0.5rem; color: #495057;'>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#4c6ef5">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                            <path d="M12 7v5l3 1.5" fill="none" stroke="#4c6ef5" stroke-width="1" stroke-linecap="round"/>
                         </svg>
                         <span style='font-size: 0.9rem;'>ML Powered</span>
                     </div>
                     <div style='display: flex; align-items: center; gap: 0.5rem; color: #495057;'>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#4c6ef5">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="6" height="6" rx="1" fill="#4c6ef5"/>
+                            <rect x="15" y="3" width="6" height="6" rx="1" fill="#4c6ef5"/>
+                            <rect x="3" y="15" width="6" height="6" rx="1" fill="#4c6ef5"/>
+                            <rect x="15" y="15" width="6" height="6" rx="1" fill="#4c6ef5"/>
                         </svg>
                         <span style='font-size: 0.9rem;'>Real-time</span>
                     </div>
                     <div style='display: flex; align-items: center; gap: 0.5rem; color: #495057;'>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#4c6ef5">
-                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                        <svg width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="none" stroke="#4c6ef5" stroke-width="1.5"/>
+                            <path d="M8 12h8M12 8v8" stroke="#4c6ef5" stroke-width="1" stroke-linecap="round"/>
                         </svg>
                         <span style='font-size: 0.9rem;'>Secure</span>
                     </div>
